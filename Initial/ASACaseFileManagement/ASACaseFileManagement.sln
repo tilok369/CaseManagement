@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASACaseFileManagement.API", "ASACaseFileManagement.API\ASACaseFileManagement.API.csproj", "{808D2656-C31B-40B2-9D74-17D5F26969B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASACaseManagement.Services", "ASACaseManagement.Services\ASACaseManagement.Services.csproj", "{677EEBD5-02AE-434D-A023-0BDD559BDF2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{808D2656-C31B-40B2-9D74-17D5F26969B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{808D2656-C31B-40B2-9D74-17D5F26969B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{808D2656-C31B-40B2-9D74-17D5F26969B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{808D2656-C31B-40B2-9D74-17D5F26969B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{677EEBD5-02AE-434D-A023-0BDD559BDF2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{677EEBD5-02AE-434D-A023-0BDD559BDF2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{677EEBD5-02AE-434D-A023-0BDD559BDF2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{677EEBD5-02AE-434D-A023-0BDD559BDF2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {820AC695-B8DF-4319-A6C6-54CB257534BC}
+	EndGlobalSection
+EndGlobal

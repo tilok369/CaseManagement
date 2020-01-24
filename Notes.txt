@@ -1,0 +1,15 @@
+1. Create Project
+2. Remove unwanted files
+3. Configure for console run
+4. Adding EF, brief overview to it
+5. Create controller, API controller attribute, attribute routing, ControllerBase
+6. AddScoped dependency injection
+7. add version number
+8. Smart url convention
+
+	- not api/getauthors
+	- api/authors/{authorId}
+	- hierarchy => 
+	- api/auhtors/{authorid}/courses/{coursid}
+	- api/authors?orderby=name
+	- api/auhtors/{auhtorid}/pagetotals => api/authors/{authorid}/totalamountofpages
