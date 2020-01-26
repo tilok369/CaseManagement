@@ -5,6 +5,13 @@
 5. Create controller, API controller attribute, attribute routing, ControllerBase
 6. AddScoped dependency injection
 7. add version number
+	- Microsoft.AspNetCore.Mvc.Versioning
+	- services.AddApiVersioning(config =>
+            {
+                config.DefaultApiVersion = new ApiVersion(1, 0);
+                config.AssumeDefaultVersionWhenUnspecified = true;
+            });
+			[Route("api/v{version:apiVersion}/cases")]
 8. Smart url convention
 
 	- not api/getauthors
@@ -13,3 +20,14 @@
 	- api/auhtors/{authorid}/courses/{coursid}
 	- api/authors?orderby=name
 	- api/auhtors/{auhtorid}/pagetotals => api/authors/{authorid}/totalamountofpages
+	
+9.  Set proper status code
+10. content negotiation with xml or json
+	- services.AddControllers(setupAction =>
+            {
+                setupAction.ReturnHttpNotAcceptable = true;
+            }).AddXmlDataContractSerializerFormatters();
+
+11. Enitity DTO
+12. IActionResult<T> - needed for API documentation
+14. AutoMapper
