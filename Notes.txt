@@ -31,3 +31,27 @@
 11. Enitity DTO
 12. IActionResult<T> - needed for API documentation
 14. AutoMapper
+	- AutoMapper.Extensions.Microsoft.DependencyInjection
+	- services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+	- public class RespondentProfile: Profile
+    {
+        public RespondentProfile()
+        {
+            CreateMap<Respondent, RespondentDto>()
+                .ForMember(
+                    dest => dest.Name,
+                    opt => opt.MapFrom(src => $"{src.FirstName} {src.LastName}"))
+                .ForMember(
+                    dest => dest.Age,
+                    opt => opt.MapFrom(src => src.DateOfBirth.GetCurrentAge()));
+        }
+    }
+	
+	- _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
+	
+	-   [HttpGet("respondents")]
+        public ActionResult<IEnumerable<RespondentDto>> GetRespondents()
+        {
+            var respondents = _repository.GetRespondents();
+            return Ok(_mapper.Map<IEnumerable<RespondentDto>>(respondents));
+        }
